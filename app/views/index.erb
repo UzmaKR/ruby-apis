@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <table>
+    <tr>
+      <th>API call</th>
+      <th>API response</th>
+    </tr>
+    <tr>
+      <td>client.user "UzmaKR"</td>
+      <td><%= @api_user_info %></td>
+    </tr>
+    <tr>
+      <td>client.follow "Stephenitis"</td>
+      <td><%= @api_follow %></td>
+    </tr>
+    <tr>
+      <td>client.commits "mattbarackman/recent_tweets_1"</td>
+      <td><%= @api_commits %></td>
+    </tr>
+    <tr>
+      <td>client.list_commits "mattbarackman/recent_tweets_1"</td>
+      <td><%= @api_list_commits %></td>
+    </tr>
+    <tr>
+      <td>client::Contents.content "UzmaKR/anagram_server"</td>
+      <td><%= @api_repo_contents %></td>
+    </tr>
+  </table>
+</div>
